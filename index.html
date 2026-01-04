@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Coin System - Ana Sayfa</title>
     <link rel="stylesheet" href="css/style.css">
+        <title>Yönlendiriliyor...</title>
+
+    <script>
+        const user = localStorage.getItem("user");
+
+        if (!user) {
+            window.location.replace("login.html");
+        }
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -78,4 +87,5 @@
     <script src="js/coin.js"></script>
     <script src="js/video.js"></script>
 </body>
+
 </html>
